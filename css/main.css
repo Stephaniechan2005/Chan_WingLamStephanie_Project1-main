@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "cooper_hewittbook";
+  src: url("../fonts/cooperhewitt-book-webfont.woff") format("woff2"),
+    url("../fonts/cooperhewitt-book-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gawaaregular";
+  src: url("../fonts/gawaa-regular-webfont.woff2") format("woff2"),
+    url("../fonts/gawaa-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoheavy";
+  src: url("../fonts/lato-heavy-webfont.woff2") format("woff2"),
+    url("../fonts/lato-heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+#container {
+  width: 428px;
+  margin: 0 auto;
+  border: solid 1px rgb(251, 185, 63);
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(210, 226, 245, 1) 100%
+  );
+  border-radius: 10px;
+}
+
+#mainContent {
+  display: grid;
+  grid-template-columns: repeat(4, 85px);
+  grid-column-gap: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+article {
+  grid-column: 1/-1;
+  margin-bottom: 15px;
+}
+p {
+  font-family: cooper_hewittbook;
+  line-height: 28px;
+  letter-spacing: auto;
+}
+
+h2 {
+  background-color: rgb(230, 227, 195);
+  border: 3px rgb(251, 185, 63);
+  border-radius: 5px;
+  padding-left: 30px;
+  line-height: 60px;
+  color: rgb(253, 174, 28);
+  font-size: 40px;
+  box-shadow: 2px 2px 5px rgba(253, 174, 28, 0.5);
+  font-family: latoheavy;
+  display: block;
+}
+
+img {
+  grid-column: 1/-1;
+  width: 380px;
+  border: 2px solid rgb(251, 185, 63);
+  transform: rotate(5deg);
+}
+
+.uneven {
+  grid-column: 1/-1;
+  width: 380px;
+  border: 2px solid rgba(251, 185, 63, 0.777);
+  transform: rotate(-5deg);
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+h2 + div + p::first-letter {
+  color: white;
+  background-color: rgb(251, 185, 63);
+  padding: 8px 6px;
+  margin-right: 10px;
+  float: left;
+  font-size: 30px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 rgb(230, 227, 195);
+}
+
+div + p::first-letter {
+  color: white;
+  background-color: rgb(251, 185, 63);
+  padding: 8px 6px;
+  margin-right: 10px;
+  float: left;
+  font-size: 30px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 rgb(230, 227, 195);
+}
+
+#highlight {
+  font-size: 30px;
+  color: rgb(140, 123, 123);
+  margin-right: 15px;
+  margin-left: 15px;
+  display: block;
+  text-decoration: bold;
+  background-color: white;
+  border-radius: 2px;
+  padding: 6px 6px;
+  font-family: gawaaregular;
+}
+#highlight2 {
+  font-size: 30px;
+  color: rgb(140, 123, 123);
+  margin-right: 30px;
+  margin-left: 50px;
+  text-decoration: bold;
+  background-color: white;
+  border-radius: 2px;
+  padding: 6px 6px;
+  font-family: gawaaregular;
+}
+.even {
+  grid-column: 1/-1;
+  width: 250px;
+  border: 2px solid rgba(251, 185, 63, 0.777);
+  z-index: 1;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  display: block;
+}
+
+#two-hands-hold-bottles {
+  width: 250px;
+  margin: 0 auto;
+  display: block;
+}
