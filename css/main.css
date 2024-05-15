@@ -54,7 +54,7 @@ article {
 p {
   font-family: cooper_hewittbook;
   line-height: 28px;
-  letter-spacing: auto;
+  letter-spacing: normal;
 }
 
 h2 {
@@ -114,7 +114,7 @@ div + p::first-letter {
   margin-right: 15px;
   margin-left: 15px;
   display: block;
-  text-decoration: bold;
+  font-weight: bold;
   background-color: white;
   border-radius: 2px;
   padding: 6px 6px;
@@ -125,7 +125,7 @@ div + p::first-letter {
   color: rgb(140, 123, 123);
   margin-right: 30px;
   margin-left: 50px;
-  text-decoration: bold;
+  font-weight: bold;
   background-color: white;
   border-radius: 2px;
   padding: 6px 6px;
